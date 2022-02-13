@@ -449,8 +449,8 @@ main {
 }
 
 .index {
-  height: calc(100vh - 249px);
-  max-height: calc(100vh - 249px);
+  height: calc(100vh - 299px);
+  max-height: calc(100vh - 299px);
   overflow: auto;
   background-color: #f5f5f5;
 }
