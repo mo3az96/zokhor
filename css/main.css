@@ -333,7 +333,7 @@ nav .nav-scroll {
 
 nav .nav-scroll::-webkit-scrollbar {
   background: #248387;
-  width: 2px;
+  width: 0;
 }
 
 nav hr {
@@ -614,6 +614,208 @@ main {
 
 .post .post-tools a:hover {
   color: #69bec5;
+}
+
+.pop-filters {
+  padding: 60px 40px;
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  bottom: -85vh;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 9999999;
+  max-height: 85vh;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-filters.active {
+  bottom: 0;
+}
+
+.pop-filters::-webkit-scrollbar {
+  background: #248387;
+  width: 0;
+}
+
+.pop-filters .checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pop-filters .label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+.pop-filters .label .mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17px;
+  height: 17px;
+  background: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #fff;
+  margin-left: 18.5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-filters .label .mark i {
+  -webkit-transform: scale(0) rotate(360deg);
+          transform: scale(0) rotate(360deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-filters .label input {
+  display: none;
+}
+
+.pop-filters .label input:checked ~ .mark {
+  background-color: #248387;
+  border-color: #248387;
+}
+
+.pop-filters .label input:checked ~ .mark i {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.pop-filters .small-checks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 7px;
+}
+
+.pop-filters .check {
+  font-size: 17px;
+  font-weight: 500;
+  color: #707070;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7px;
+}
+
+.pop-filters .check .mark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 17px;
+  height: 17px;
+  background: #ffffff;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  font-size: 11px;
+  color: #fff;
+  margin-left: 10.5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-filters .check .mark i {
+  -webkit-transform: scale(0) rotate(360deg);
+          transform: scale(0) rotate(360deg);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.pop-filters .check input {
+  display: none;
+}
+
+.pop-filters .check input:checked ~ .mark {
+  background-color: #248387;
+  border-color: #248387;
+}
+
+.pop-filters .check input:checked ~ .mark i {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.form-control {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #b7b7b7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  color: #707070;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: tajawal;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #707070;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #707070;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #707070;
+}
+
+.form-control::placeholder {
+  color: #707070;
+}
+
+.form-control:focus {
+  border-color: #248387;
+}
+
+select.form-control {
+  background-position: left 20px top 50%;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .index {

@@ -8,7 +8,12 @@ $(document).ready(function () {
     $("nav").addClass("active");
     $(".overlay").fadeIn(300);
   });
+  $(".filter-btn").click(function () {
+    $(".pop-filters").addClass("active");
+    $(".overlay").fadeIn(300);
+  });
   $(".overlay,.close-btn").click(function () {
+    $(".pop-filters").removeClass("active");
     $("nav").removeClass("active");
     $(".overlay").fadeOut(300);
   });
