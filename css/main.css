@@ -786,6 +786,7 @@ main {
   font-size: 17px;
   font-weight: 500;
   font-family: tajawal;
+  background-color: #fff;
 }
 
 .form-control::-webkit-input-placeholder {
