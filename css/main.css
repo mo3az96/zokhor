@@ -291,6 +291,13 @@ header {
           justify-content: flex-end;
 }
 
+.page-head {
+  font-size: 21px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -1075,6 +1082,101 @@ select.form-control {
   border-radius: 50%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.search-form {
+  margin-top: 97px;
+  padding: 15px 40px;
+  background-color: #f5f5f5;
+}
+
+.search-form .search-result-count {
+  font-size: 10px;
+  color: #707070;
+  display: block;
+  margin-top: 10px;
+}
+
+.search-cont {
+  position: relative;
+}
+
+.search-cont input {
+  background-color: transparent;
+  padding: 20px 16px;
+}
+
+.search-cont button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  font-size: 27px;
+  color: #707070;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-cont button:hover {
+  color: #248387;
+}
+
+.search-result {
+  height: calc(100vh - 220px);
+  max-height: calc(100vh - 220px);
+  overflow: auto;
+  background-color: #f5f5f5;
+}
+
+.result-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 33px 25px;
+  margin-bottom: 3px;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+.result-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.result-item .user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 19px;
+}
+
+.result-item .user-img img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.result-item .user-name {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 6px;
+  color: #69bec5;
+}
+
+.result-item .user-desc {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #707070;
 }
 
 footer {
