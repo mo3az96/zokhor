@@ -30,9 +30,9 @@ $(document).ready(function () {
     },
   });
   var mainswiper = new Swiper(".second-slider .swiper-container", {
-    slidesPerView:2,
+    slidesPerView: 2,
     spaceBetween: 15,
-    centeredSlides:true,
+    centeredSlides: true,
     loop: true,
     // autoplay: {
     //   delay: 5000,
@@ -43,9 +43,9 @@ $(document).ready(function () {
     },
   });
   var mainswiper = new Swiper(".third-slider .swiper-container", {
-    slidesPerView:2,
+    slidesPerView: 2,
     spaceBetween: 15,
-    centeredSlides:true,
+    centeredSlides: true,
     loop: true,
     // autoplay: {
     //   delay: 5000,
@@ -54,5 +54,16 @@ $(document).ready(function () {
       nextEl: ".third-slider .swiper-btn-next",
       prevEl: ".third-slider .swiper-btn-prev",
     },
+  });
+
+  $(".checks-head").click(function () {
+    if ($(this).siblings().css("display") == "none") {
+      $(this).siblings().slideDown(500);
+    } else {
+      $(this).siblings().slideUp(500);
+    }
+  });
+  $(".checks-head .check").click(function (e) {
+    e.stopPropagation();
   });
 });
