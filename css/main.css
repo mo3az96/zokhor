@@ -953,7 +953,7 @@ select.form-control {
 }
 
 .index {
-  padding: 120px 0 60px;
+  padding: 120px 0 100px;
   height: calc(100vh - 76px);
   max-height: calc(100vh - 76px);
   overflow: auto;
@@ -1746,6 +1746,10 @@ select.form-control {
   margin-top: 3px;
 }
 
+.related-item .user.active .user-name {
+  background-color: rgba(36, 131, 135, 0.12);
+}
+
 .related-item .add {
   font-size: 14px;
   color: #fff;
@@ -1768,10 +1772,140 @@ select.form-control {
   border: none;
   margin: 31px auto 0;
   text-decoration: none;
+  font-family: tajawal;
 }
 
 .related-item .add:hover {
   background-color: #69bec5;
+}
+
+.password {
+  padding: 125px 23px 100px;
+  height: calc(100vh - 76px);
+  max-height: calc(100vh - 76px);
+  overflow: auto;
+  background-color: #f5f5f5;
+}
+
+.password .form-submit {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #248387;
+  width: 155px;
+  height: 46px;
+  border-radius: 23px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  font-family: tajawal;
+  cursor: pointer;
+  margin: 37px auto 0;
+  text-decoration: none;
+}
+
+.password .form-submit:hover {
+  background-color: #69bec5;
+}
+
+.form-inputs {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 34px;
+}
+
+.maneger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.maneger label {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.maneger .switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(36, 131, 135, 0.4);
+  width: 29px;
+  height: 16px;
+  border-radius: 12px;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.maneger .switcher .handel {
+  width: 20px;
+  height: 20px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.maneger .switcher input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -4px;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+}
+
+.maneger .switcher input:checked {
+  left: -4px;
+  right: 0;
+}
+
+.maneger .switcher input:checked ~ .handel {
+  right: calc(100% - 16px);
+  background-color: #248387;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
 }
 
 footer {
