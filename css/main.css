@@ -447,6 +447,26 @@ nav a i {
   margin-left: 14px;
 }
 
+nav.white-nav {
+  background: #fff;
+}
+
+nav.white-nav .user-name {
+  color: #707070;
+}
+
+nav.white-nav .user-tel {
+  color: #707070;
+}
+
+nav.white-nav a {
+  color: #707070;
+}
+
+nav.white-nav a i {
+  color: #248387;
+}
+
 .close-btn {
   position: absolute;
   top: 32px;
