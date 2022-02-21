@@ -67,3 +67,8 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 });
+
+function infoPopup(num) {
+  $("#infopop" + num).addClass("active");
+  $(".overlay").fadeIn(300);
+}

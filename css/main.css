@@ -480,7 +480,7 @@ nav.white-nav a i {
 }
 
 .close-btn:hover {
-  color: #fff;
+  color: #69bec5;
 }
 
 .posts {
@@ -645,6 +645,7 @@ nav.white-nav a i {
   padding: 60px 40px;
   border-radius: 50px 50px 0px 0px;
   position: absolute;
+  bottom: 0;
   bottom: -85vh;
   left: 0;
   right: 0;
@@ -797,6 +798,136 @@ nav.white-nav a i {
 .pop-filters .check input:checked ~ .mark i {
   -webkit-transform: none;
           transform: none;
+}
+
+.users-related {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.users-related .user {
+  width: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.users-related .user .user-img {
+  width: 100%;
+  height: 91px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.users-related .user .user-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.users-related .user.main-user {
+  z-index: 9;
+}
+
+.users-related .user.main-user .user-img {
+  width: 140px;
+  background-color: #fff;
+  height: 140px;
+  border: 2px solid #248387;
+  border-radius: 50%;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.users-related .user .user-name {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 17px;
+  color: #248387;
+  font-weight: 500;
+}
+
+.users-related ~ .telephone-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.users-related ~ .telephone-cont a {
+  font-size: 21px;
+  font-weight: 500;
+  color: #707070;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.users-related ~ .telephone-cont a:hover, .users-related ~ .telephone-cont a:focus {
+  color: #248387;
+}
+
+.users-related ~ .socials-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+}
+
+.users-related ~ .socials-cont a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 27px;
+  color: #248387;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 0 12.5px;
+}
+
+.users-related ~ .socials-cont a:hover, .users-related ~ .socials-cont a:focus {
+  color: #69bec5;
+}
+
+.users-related ~ .extra-info {
+  border-top: 1px solid #707070;
+  padding: 42px 0 0;
+  margin: 42px 0 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #b7b7b7;
 }
 
 .form-group {
@@ -1926,6 +2057,87 @@ select.form-control {
   background-color: #248387;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
+}
+
+.grandsons {
+  padding: 97px 0 60px;
+  height: calc(100vh - 76px);
+  max-height: calc(100vh - 76px);
+  overflow: auto;
+  background-color: #f5f5f5;
+  border-top: 4px solid #f5f5f5;
+}
+
+.grandson-item {
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding: 21px 25px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.grandson-item:hover {
+  background-color: rgba(36, 131, 135, 0.1);
+}
+
+.grandson-item .user-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+.grandson-item .user-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grandson-item .user-name {
+  font-size: 17px;
+  color: #707070;
+  font-weight: 500;
+}
+
+.grandson-item .user-name span {
+  color: #248387;
+}
+
+.grandson-item .user-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: auto;
+  width: 90px;
+  height: 37px;
+  border-radius: 19px;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgba(36, 131, 135, 0.17);
+  color: #248387;
+}
+
+.grandson-item .user-status.dead {
+  background-color: #e2e2e2;
+  color: #707070;
 }
 
 footer {
