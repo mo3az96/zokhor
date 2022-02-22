@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <title>ZOKHOR</title>
+    <link rel="shortcut icon" type="img/png" href="images/fav.png" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/line-awesome.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-basic.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="body">
+      <!-- Start Splash -->
+      <div class="splash">
+        <div class="splash-img">
+          <div class="img">
+            <img src="images/splash.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+      <!-- End Splash -->
+
+      <!-- Start Header -->
+      <header>
+        <div class="container">
+          <div class="header">
+            <div class="header-right-tools">
+              <a role="button" class="menu-btn header-ico">
+                <i class="la la-bars"></i>
+              </a>
+              <h2 class="page-head">جدول الفاعليات والمناسبات</h2>
+            </div>
+            <div class="header-left-tools">
+              <a role="button" class="filter-btn header-ico">
+                <i class="las la-plus-circle"></i>
+              </a>
+              <a href="index.html" class="back-btn header-ico">
+                <i class="la la-angle-left"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Start Nav -->
+      <div class="overlay"></div>
+      <nav class="white-nav">
+        <div class="nav-scroll">
+          <button class="close-btn">
+            <i class="la la-times"></i>
+          </button>
+          <div class="user">
+            <div class="user-img">
+              <img src="images/Users/user.png" />
+            </div>
+            <span class="user-name"> محمد عبدالرحمن </span>
+            <span class="user-tel">95678901234</span>
+          </div>
+          <hr />
+          <ul class="list">
+            <li>
+              <a href="#!">
+                <i class="las la-mobile"></i>
+                تطبيق الاسرة
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-home"></i>
+                الرئيسية
+              </a>
+            </li>
+            <hr />
+            <li>
+              <a href="#!">
+                <i class="las la-user-plus"></i>
+                طلبات الانضمام
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-user-friends"></i>
+                المستخدمين
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-user-edit"></i>
+                مؤخراً
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-code-branch"></i>
+                أفخاذ العائلة
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-cog"></i>
+                إعدادات التطبيق
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-tools"></i>
+                جودة البيانات
+              </a>
+            </li>
+            <hr />
+            <li>
+              <a href="#!">
+                <i class="lar la-bell"></i>
+                تشغيل التنبيهات
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-lock"></i>
+                تغيير كلمة المرور
+              </a>
+            </li>
+            <li>
+              <a href="#!">
+                <i class="las la-sign-out-alt"></i>
+                تسجيل الخروج
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Nav -->
+
+      <!-- Start Main -->
+      <main>
+        <section class="calender">
+          <div id="color-calendar"></div>
+        </section>
+      </main>
+      <!-- End Main -->
+
+      <!-- Start Footer -->
+      <footer>
+        <div class="footer">
+          <img src="images/fixed.svg" />
+
+          <a href="#!" class="fixed-link">
+            <i class="las la-link"></i>
+            <strong>القرابة</strong>
+          </a>
+          <a href="#!" class="fixed-link active">
+            <i class="las la-handshake"></i>
+            <strong>المناسبات</strong>
+          </a>
+          <a href="#!" class="fixed-link main-link">
+            <i class="lab la-pagelines"></i>
+          </a>
+          <a href="#!" class="fixed-link">
+            <i class="las la-users"></i>
+            <strong>الشجرة</strong>
+          </a>
+          <a href="#!" class="fixed-link">
+            <i class="lar la-newspaper"></i>
+            <strong>الأخبار</strong>
+          </a>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <!-- Start Filters -->
+      <section class="pop-filters">
+        <div class="event-line">
+          <label> نوع المناسبة </label>
+          <div class="select-btns">
+            <div class="btn-cont">
+              <input type="radio" name="type" />
+              <span class="text">المناسبات</span>
+            </div>
+            <div class="btn-cont">
+              <input type="radio" name="type" />
+              <span class="text">الأحداث</span>
+            </div>
+          </div>
+        </div>
+        <div class="event-line">
+          <label> صنف المناسبة </label>
+          <select class="event-control form-control">
+            <option>نوع الحدث</option>
+            <option>نوع 1</option>
+            <option>نوع 2</option>
+            <option>نوع 3</option>
+          </select>
+        </div>
+        <div class="event-line">
+          <label> اسم المناسبة </label>
+          <input type="text" class="event-control form-control" />
+        </div>
+        <div class="event-line">
+          <label> بداية المناسبة </label>
+          <input type="text" class="event-control form-control" />
+        </div>
+        <div class="event-line">
+          <label> نهاية المناسبة </label>
+          <input type="text" class="event-control form-control" />
+        </div>
+        <div class="event-line">
+          <label> تفاصيل المناسبة </label>
+          <textarea
+            class="event-control form-control"
+            placeholder="مكان المناسبة وأنشطتها ونص"
+          ></textarea>
+        </div>
+        <div class="event-line">
+          <label> الدعوة عامة </label>
+          <div class="switcher">
+            <input type="checkbox" id="invited-switch" />
+            <span class="handel"></span>
+          </div>
+        </div>
+        <div class="event-line invited" id="invited">
+          <label> المدعوين </label>
+          <textarea class="event-control form-control"></textarea>
+        </div>
+      </section>
+      <!-- End Filters -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

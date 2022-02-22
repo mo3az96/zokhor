@@ -66,6 +66,18 @@ $(document).ready(function () {
   $(".checks-head .check").click(function (e) {
     e.stopPropagation();
   });
+
+  new Calendar({
+    id: "#color-calendar",
+  });
+
+  $("#invited-switch").change(function () {
+    if ($(this).prop("checked")) {
+      $("#invited").slideDown();
+    } else {
+      $("#invited").slideUp();
+    }
+  });
 });
 
 function infoPopup(num) {
