@@ -33,6 +33,9 @@
               <a role="button" class="menu-btn header-ico">
                 <i class="la la-bars"></i>
               </a>
+              <a role="button" class="filter-btn header-ico">
+                <i class="las la-filter"></i>
+              </a>
             </div>
             <a href="index.html" class="logo">
               <img src="images/logo.svg" />
@@ -41,8 +44,8 @@
               <a href="search.html" class="search-btn header-ico">
                 <i class="las la-search"></i>
               </a>
-              <a role="button" class="filter-btn header-ico">
-                <i class="las la-sliders-h"></i>
+              <a href="#!" class="header-ico">
+                <i class="las la-bell"></i>
               </a>
             </div>
           </div>
@@ -174,17 +177,17 @@
               <div class="post">
                 <div class="post-icon">
                   <i class="las la-newspaper"></i>
+                  <span class="time"> 12:30, 21/03 </span>
                 </div>
                 <div class="post-content">
                   <div class="post-body">
                     <div class="body-text">
-                      <a href="#!" class="post-name">
+                      <a href="#!" class="post-name" onclick="infoPopup(1)">
                         تم عقد قران محمد عبد الرحمن على فاطمه ابراهيم
                       </a>
-                      <span class="time"> 12:30, 21/03 </span>
                     </div>
                   </div>
-                  <div class="post-tools">
+                  <!-- <div class="post-tools">
                     <a href="#!">
                       <i class="las la-check"></i>
                     </a>
@@ -197,37 +200,23 @@
                     <a href="#!">
                       <i class="las la-share"></i>
                     </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <div class="post">
                 <div class="post-icon">
                   <i class="las la-calendar"></i>
+                  <span class="time"> 12:30, 21/03 </span>
                 </div>
                 <div class="post-content">
                   <div class="post-body">
                     <div class="body-text">
-                      <a href="#!" class="post-name">
+                      <a href="#!" class="post-name" onclick="infoPopup(1)">
                         طريقة لكتابة النصوص في النشر والتصميم الجرافيكي تستخدم
                         بشكل شائع لتوضيحالشكل المرئي للمستند أو الخط دون
                         الاعتماد
                       </a>
-                      <span class="time"> 12:30, 21/03 </span>
                     </div>
-                  </div>
-                  <div class="post-tools">
-                    <a href="#!">
-                      <i class="las la-check"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-times"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="lar la-heart"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-share"></i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -237,31 +226,17 @@
               <div class="post">
                 <div class="post-icon">
                   <i class="las la-trophy"></i>
+                  <span class="time"> 12:30, 21/03 </span>
                 </div>
                 <div class="post-content">
                   <div class="post-body">
                     <div class="body-text">
-                      <a href="#!" class="post-name">
+                      <a href="#!" class="post-name" onclick="infoPopup(1)">
                         تم عقد قران محمد عبد الرحمن على فاطمه ابراهيم
                       </a>
-                      <span class="time"> 12:30, 21/03 </span>
                     </div>
-                    <a href="#!" class="body-img">
+                    <a href="#!" class="body-img" onclick="infoPopup(1)">
                       <img src="images/Posts/01.jpg" />
-                    </a>
-                  </div>
-                  <div class="post-tools">
-                    <a href="#!">
-                      <i class="las la-check"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-times"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="lar la-heart"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-share"></i>
                     </a>
                   </div>
                 </div>
@@ -269,31 +244,17 @@
               <div class="post">
                 <div class="post-icon">
                   <i class="las la-tag"></i>
+                  <span class="time"> 12:30, 21/03 </span>
                 </div>
                 <div class="post-content">
                   <div class="post-body">
                     <div class="body-text">
-                      <a href="#!" class="post-name">
+                      <a href="#!" class="post-name" onclick="infoPopup(1)">
                         خصم على جميع منتجات لدى ستور جرير
                       </a>
-                      <span class="time"> 12:30, 21/03 </span>
                     </div>
-                    <a href="#!" class="body-img">
+                    <a href="#!" class="body-img" onclick="infoPopup(1)">
                       <img src="images/Posts/02.jpg" />
-                    </a>
-                  </div>
-                  <div class="post-tools">
-                    <a href="#!">
-                      <i class="las la-check"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-times"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="lar la-heart"></i>
-                    </a>
-                    <a href="#!">
-                      <i class="las la-share"></i>
                     </a>
                   </div>
                 </div>
@@ -407,6 +368,38 @@
             </span>
             احصاءات
           </label>
+        </div>
+      </section>
+
+      <section class="infopop-filters" id="infopop1">
+        <div class="post">
+          <div class="post-icon">
+            <i class="las la-newspaper"></i>
+            <span class="time"> 12:30, 21/03 </span>
+          </div>
+          <div class="post-content">
+            <div class="post-body">
+              <div class="body-text">
+                <span class="post-name">
+                  تم عقد قران محمد عبد الرحمن على فاطمه ابراهيم
+                </span>
+              </div>
+            </div>
+            <div class="post-tools">
+              <a href="#!">
+                <i class="las la-check"></i>
+              </a>
+              <a href="#!">
+                <i class="las la-times"></i>
+              </a>
+              <a href="#!">
+                <i class="lar la-heart"></i>
+              </a>
+              <a href="#!">
+                <i class="las la-share"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Filters -->

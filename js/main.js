@@ -14,6 +14,7 @@ $(document).ready(function () {
   });
   $(".overlay,.close-btn").click(function () {
     $(".pop-filters").removeClass("active");
+    $(".infopop-filters").removeClass("active");
     $("nav").removeClass("active");
     $(".overlay").fadeOut(300);
   });
@@ -67,9 +68,11 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
-  new Calendar({
-    id: "#color-calendar",
-  });
+  if ($("#color-calendar").length) {
+    new Calendar({
+      id: "#color-calendar",
+    });
+  }
 
   $("#invited-switch").change(function () {
     if ($(this).prop("checked")) {

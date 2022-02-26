@@ -564,7 +564,7 @@ nav.white-nav a i {
 }
 
 .post .body-text {
-  padding: 18px 20px 7px;
+  padding: 18px 20px;
 }
 
 .post .body-img {
@@ -599,13 +599,14 @@ nav.white-nav a i {
 }
 
 .post .time {
-  margin: 6px 0 0;
+  margin: 0 0 0;
   color: #989898;
   font-size: 9px;
   line-height: 9px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  white-space: nowrap;
 }
 
 .post .post-tools {
@@ -1109,6 +1110,31 @@ nav.white-nav a i {
   width: 100%;
   max-width: 100%;
   margin-right: 10px;
+}
+
+.infopop-filters {
+  padding: 60px 40px;
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  bottom: 0;
+  bottom: -85vh;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 9999999;
+  max-height: 85vh;
+  overflow-y: auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.infopop-filters.active {
+  bottom: 0;
+}
+
+.infopop-filters::-webkit-scrollbar {
+  background: #248387;
+  width: 0;
 }
 
 .form-group {
