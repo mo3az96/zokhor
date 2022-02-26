@@ -549,18 +549,19 @@ nav.white-nav a i {
   background-color: #fff;
   border: 1px solid #d9d9d9;
   border-radius: 15px;
+  overflow: hidden;
 }
 
 .post .post-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .post .body-text {
