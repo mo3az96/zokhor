@@ -57,6 +57,11 @@ $(document).ready(function () {
     },
   });
 
+  $(".acc-head").click(function () {
+    $(this).siblings().slideToggle(500);
+    $(this).toggleClass("active");
+  });
+  
   $(".checks-head").click(function () {
     if ($(this).siblings().css("display") == "none") {
       $(this).siblings().slideDown(500);
