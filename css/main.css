@@ -215,6 +215,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 33px 0;
+  padding: 15px 0;
 }
 
 .home .header div {
@@ -1314,7 +1315,7 @@ select.form-control {
 }
 
 .index {
-  padding: 120px 0 100px;
+  padding: 83px 0 100px;
   height: calc(100vh - 76px);
   max-height: calc(100vh - 76px);
   overflow: auto;
@@ -1506,7 +1507,7 @@ select.form-control {
 }
 
 .search-form {
-  margin-top: 97px;
+  margin-top: 61px;
   padding: 15px 40px;
   background-color: #f5f5f5;
 }
@@ -1601,7 +1602,7 @@ select.form-control {
 }
 
 .sponsors {
-  margin-top: 97px;
+  margin-top: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1853,7 +1854,7 @@ select.form-control {
 }
 
 .settings-section {
-  margin-top: 97px;
+  margin-top: 61px;
   height: calc(100vh - 97px);
   max-height: calc(100vh - 97px);
   overflow: auto;
@@ -2064,7 +2065,7 @@ select.form-control {
 }
 
 .related {
-  padding: 97px 0 60px;
+  padding: 61px 0 60px;
   height: calc(100vh - 76px);
   max-height: calc(100vh - 76px);
   overflow: auto;
@@ -2236,7 +2237,7 @@ select.form-control {
 }
 
 .password {
-  padding: 125px 23px 100px;
+  padding: 84px 23px 100px;
   height: calc(100vh - 76px);
   max-height: calc(100vh - 76px);
   overflow: auto;
@@ -2365,7 +2366,7 @@ select.form-control {
 }
 
 .grandsons {
-  padding: 97px 0 60px;
+  padding: 61px 0 60px;
   height: calc(100vh - 76px);
   max-height: calc(100vh - 76px);
   overflow: auto;
@@ -2446,7 +2447,7 @@ select.form-control {
 }
 
 .calender {
-  margin-top: 97px;
+  margin-top: 61px;
   height: calc(100vh - 97px);
   max-height: calc(100vh - 97px);
   overflow: auto;
@@ -2637,7 +2638,7 @@ select.form-control {
 }
 
 .user-section {
-  margin-top: 97px;
+  margin-top: 61px;
   height: calc(100vh - 97px);
   max-height: calc(100vh - 97px);
   overflow: auto;
