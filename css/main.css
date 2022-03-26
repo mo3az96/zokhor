@@ -3481,6 +3481,141 @@ select.form-control {
   background-color: #69bec5;
 }
 
+.requstes-section {
+  height: calc(100vh - 61px);
+  margin-top: 61px;
+  overflow: auto;
+  background-color: #f5f5f5;
+  padding-bottom: 130px;
+}
+
+.request-title {
+  height: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 33px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+
+.request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  margin-bottom: 3px;
+  padding: 16px 33px;
+}
+
+.request .user-img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  border: 1px solid #b7b7b7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-left: 19px;
+}
+
+.request .user-img img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.request .user-img.man {
+  border-color: #248387;
+}
+
+.request .user-img.woman {
+  border-color: #ff0f87;
+}
+
+.request .user-img.dead {
+  border-color: #b7b7b7;
+}
+
+.request .user-name {
+  font-size: 17px;
+  color: #248387;
+  font-weight: 500;
+  margin: 0;
+}
+
+.request .tools {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.request .tools a {
+  font-size: 31px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.request .tools a.reject {
+  color: #a70c0c !important;
+}
+
+.request .tools a.accept {
+  color: #248387 !important;
+}
+
+.emapty-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 0;
+  opacity: 50%;
+}
+
+.emapty-list h6 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #248387;
+  margin: 0 0 10px;
+}
+
+.emapty-list i {
+  color: #248387;
+  font-size: 97px;
+}
+
 footer {
   width: 100%;
   position: absolute;
